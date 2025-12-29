@@ -1,35 +1,35 @@
-# 📈 Análisis Estratégico de Rentabilidad de Tarifas en Telecom (Megaline)
+# 📈 Strategic Analysis of Telecom Plan Profitability (Megaline)
 
-## 📌 Contexto y Problema de Negocio
-Trabajando como analista para el operador de telecomunicaciones Megaline, el objetivo fue determinar **cuál de sus dos planes de prepago, Surf o Ultimate, genera mayor ingreso promedio** para optimizar la estrategia de publicidad de la empresa.
+## 📌 Business Context and Problem
+Working as a data analyst for the telecommunications provider Megaline, the goal of this project was to determine **which of its two prepaid plans, Surf or Ultimate, generates higher average revenue**, in order to optimize the company’s advertising strategy.
 
-El análisis se basó en una muestra de 500 clientes durante el año 2018.
+The analysis is based on a sample of 500 customers during the year 2018.
 
-## 🎯 Objetivos Clave del Análisis
+## 🎯 Key Objectives of the Analysis
 
-1.  **Preprocesamiento de Datos:** Aplicar reglas de negocio estrictas (ej. redondeo de llamadas y datos) y consolidar la actividad mensual (llamadas, mensajes, internet) de cada usuario.
-2.  **Métrica de Ingresos:** Desarrollar una función para calcular el ingreso mensual total por usuario, considerando la cuota fija y el **cobro por exceso de límite (*overage*)** por cada plan.
-3.  **Análisis de Consumo:** Calcular y visualizar la media, varianza y desviación estándar del consumo (minutos, SMS, GB) para cada plan.
-4.  **Pruebas de Hipótesis:**
-    * Evaluar si existe una **diferencia estadísticamente significativa** en el ingreso promedio de los usuarios de los planes Surf y Ultimate.
-    * Evaluar si el ingreso promedio de los usuarios en el área **Nueva York-Nueva Jersey** difiere del de otras regiones.
+1. **Data Preprocessing:** Apply strict business rules (e.g., rounding up call durations and data usage) and consolidate each user’s monthly activity (calls, messages, and internet usage).
+2. **Revenue Metric:** Develop a function to calculate total monthly revenue per user, considering the fixed monthly fee and **overage charges** for each plan.
+3. **Usage Analysis:** Calculate and visualize the mean, variance, and standard deviation of usage (minutes, SMS, and GB) for each plan.
+4. **Hypothesis Testing:**
+   * Evaluate whether there is a **statistically significant difference** in average revenue between users of the Surf and Ultimate plans.
+   * Evaluate whether the average revenue of users in the **New York–New Jersey** area differs from that of users in other regions.
 
-## 💡 Insights Estratégicos (Clave para tu Portafolio)
+## 💡 Strategic Insights (Portfolio-Ready)
 
-| Métrica | Plan Surf | Plan Ultimate | Impacto en el Negocio |
+| Metric | Surf Plan | Ultimate Plan | Business Impact |
 | :--- | :--- | :--- | :--- |
-| **Ingreso Promedio Mensual** | **[Ingreso Promedio de Surf]** | **[Ingreso Promedio de Ultimate]** | **El plan Ultimate genera un ingreso promedio significativamente mayor.** *Necesitas poner el valor numérico obtenido en tu análisis.* |
-| **Varianza de Ingresos** | **Alta** | **Baja** | La alta varianza de **Surf** indica que una parte de sus usuarios genera ingresos adicionales considerables al exceder los límites, principalmente por **uso excesivo de datos (GB)**. El plan Ultimate es más predecible en su flujo de caja. |
-| **Consumo Promedio de Minutos** | Cerca de su límite (500) | Muy por debajo de su límite (3000) | Los usuarios de Surf están más cerca de agotar sus límites, lo que confirma la vulnerabilidad al *overage*. |
+| **Average Monthly Revenue** | **[Surf Average Revenue]** | **[Ultimate Average Revenue]** | **The Ultimate plan generates significantly higher average revenue.** *You should replace this placeholder with the actual value obtained in your analysis.* |
+| **Revenue Variance** | **High** | **Low** | The high variance of **Surf** indicates that a portion of its users generates substantial additional revenue by exceeding plan limits, mainly due to **excessive data usage (GB)**. The Ultimate plan provides a more predictable cash flow. |
+| **Average Minutes Usage** | Close to its limit (500) | Well below its limit (3000) | Surf users operate closer to their usage limits, confirming higher exposure to *overage* charges. |
 
-### Resultados de Pruebas de Hipótesis:
-* **Plan Más Rentable:** El análisis estadístico (t-test) confirma que **el ingreso promedio del plan Ultimate es mayor** y la diferencia es estadísticamente significativa.
-* **Impacto Regional:** No se encontró evidencia estadística significativa para afirmar que la ubicación geográfica (NY/NJ vs. resto) impacte el ingreso promedio del cliente.
+### Hypothesis Test Results:
+* **Most Profitable Plan:** Statistical analysis (t-test) confirms that **the average revenue of the Ultimate plan is higher**, and the difference is statistically significant.
+* **Regional Impact:** No statistically significant evidence was found to suggest that geographic location (NY/NJ vs. other regions) impacts average customer revenue.
 
-## 🛠️ Tecnologías
+## 🛠️ Technologies
 * `Python`
-* `Pandas` (Manipulación y agregación de datos)
-* `NumPy` (Cálculos numéricos, en particular el redondeo hacia arriba)
-* `SciPy.stats` (Pruebas de hipótesis T-Test)
-* `Matplotlib` & `Seaborn` (Visualización de distribuciones)
+* `Pandas` (Data manipulation and aggregation)
+* `NumPy` (Numerical computations, especially rounding up)
+* `SciPy.stats` (T-test hypothesis testing)
+* `Matplotlib` & `Seaborn` (Distribution visualization)
 
